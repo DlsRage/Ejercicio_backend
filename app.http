@@ -1,0 +1,82 @@
+GET http://localhost:3000/api/articulos
+###
+GET http://localhost:3000/api/articulos/2
+###
+POST http://localhost:3000/api/articulos
+Content-Type: application/json
+
+{
+    "_id": 4,
+    "titulo": "Don Quijote",
+    "cuerpo": "sin cuerpo",
+    "usuario": "Luis"
+}
+###
+DELETE http://localhost:3000/api/articulos/4
+###
+PUT http://localhost:3000/api/articulos/4
+Content-Type: application/json
+
+{
+    "titulo": "Hola",
+    "cuerpo": "sin cuerpo",
+    "usuario": "Eric"
+}
+
+
+
+###
+GET http://localhost:3000/api/clientes
+###
+GET http://localhost:3000/api/clientes/2
+###
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+    "id": 10,
+    "nombre": "Eric Martinez",
+    "puesto": "Gerente",
+    "email": "elena.martinez@gmail.com",
+    "telefono": "+34 678 321 098"
+}
+
+###
+DELETE http://localhost:3000/api/clientes/10
+###
+PUT http://localhost:3000/api/clientes/3
+Content-Type: application/json
+
+{
+    "nombre": "Eric Ponce",
+    "puesto": "Diseñador"
+}
+
+
+
+###
+GET http://localhost:3000/api/usuarios
+###
+GET http://localhost:3000/api/usuarios/2
+###
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+  "_id": 6,
+  "nombre": "Carla Sánchez",
+  "email": "carla.sanchez@example.com",
+  "telefono": "+34 678 555 666",
+  "direccion": "Calle Nueva 100, Zaragoza, España"
+}
+
+###
+DELETE http://localhost:3000/api/usuarios/6
+###
+PUT http://localhost:3000/api/usuarios/1
+Content-Type: application/json
+
+{
+    "nombre": "Eric Ponce",
+    "email": "EricVida@example.com"
+}
